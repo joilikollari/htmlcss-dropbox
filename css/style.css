@@ -1,22 +1,126 @@
-/* :root{
+:root{
+    --color-btn: #0161FF;
+    --bgc-jumbotron: #B4D0E7;
 
-} */
-
-
+}
 header{
-    /* display: flex; */
-    /* height: 50px; */
-    padding: 10px;
-    /* gap: 0.5px  */
-    border: 1px solid red;
-}
-.container-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 3px solid lightgreen;
-}
-.contrainer-flex-2{
-    align-content: center;
-}
+    padding: 0 15px;
 
+}
+header nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav > div{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+header nav > div ul{
+    display: flex;
+    gap: 10px;
+
+}
+header nav > div ul a {
+    color: black;
+}
+.btn{
+    padding:8px 15px;
+
+}
+.btn--blu{
+    background-color: var(--color-btn);
+    color: white;
+
+}
+.jumbotron{
+    /* background-color: var(--bgc-jumbotron); */
+    padding: 20px 0;
+    background: linear-gradient(#b4d0e6 90%, #fff 10%)
+    ;
+
+}
+.jumbotron h1{
+    font-size: 3rem ;
+    margin-bottom: 20px;
+}
+.container-80{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.container-90{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.jumbotron__info{
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+.jumbotron__text{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.jumbotron__text a{
+     width: 80%;
+}
+.jumbotron__text i{
+    font-size: 3rem;
+}
+.jumbotron__img{
+    flex-basis: 60%;
+    
+}
+.jumbotron__img img{
+    with:100%;
+    height:400px;
+}
+.business-plan h2{
+    /* margin-bottom: 20px; */
+}
+.business-plan__radios{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.business-plan__radio__choice{
+       display: flex;
+       align-items: center;
+       gap: 5px;
+}
+.business-plan__radio{
+    height: 10px;
+    aspect-ratio: 1;
+    border-radius: 1 px solid lightgray ;
+    border: 50%; 
+}
+.business-plan__radio--check{
+    border-color: 3px solid var(--color-btn);
+}
+#business-plan__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+#business-plan__cards > div{
+    flex-grow: 1;
+    flex-basis: calc(100 / 3 - 10px);
+}
+#business-plan__cards > div:last-child{
+    flex-basis: 100%;
+}
+.business-plan__card{
+    border:  1 px solid lightslategray;
+}
+.business-plan__card--top{
+    text-align: center;
+    padding: 10px;
+}
