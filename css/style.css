@@ -55,16 +55,13 @@ header nav > div ul a {
 }
 .jumbotron__info{
     display: flex;
-    align-items: flex-start;
-    
-    
+    align-items: flex-start;  
 }
 .jumbotron__text{
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
+    gap: 10px;    
 }
 .jumbotron__text a{
      width: 80%;
@@ -122,5 +119,35 @@ header nav > div ul a {
 }
 .business-plan__card--top{
     text-align: center;
+    border:  1 px solid lightslategray;
+   
+}
+.business-plan__card--top,
+.business-plan__card--bottom{
     padding: 10px;
+    
+}
+.business-plan__card--bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.business-plan__card--bottom hr{
+    width: 30%;
+    border: 1 px solid lightslategray;
+}
+.business-plan__card--bottom  .fa-check{
+    color: var(--color-btn);
+}
+.business-plan__card--bottom ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.business-plan__card--bottom ul li{
+    text-indent: -0.7rem;
+    margin-left: 1.5rem;
+}
+.business-plan__card--bottom ul li i{
+    margin-right: 5px;
 }
