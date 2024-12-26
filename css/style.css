@@ -5,6 +5,7 @@
 }
 header{
     padding: 0 15px;
+    
 
 }
 header nav{
@@ -77,77 +78,45 @@ header nav > div ul a {
     with:100%;
     height:400px;
 }
-.business-plan h2{
-    /* margin-bottom: 20px; */
+
+.row {
+    display: flex;
 }
-.business-plan__radios{
+
+.row .col {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid;
+}
+
+.card .top {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: center;
+    border-bottom: 1px solid;
 }
-.business-plan__radio__choice{
-       display: flex;
-       align-items: center;
-       gap: 5px;
+
+.card .content {
+    padding: 15px;
 }
-.business-plan__radio{
-    height: 10px;
-    aspect-ratio: 1;
-    border-radius: 1 px solid lightgray ;
-    border: 50%; 
-}
-.business-plan__radio--check{
-    border-color: 3px solid var(--color-btn);
-}
-#business-plan__cards{
+
+.card .content .inline {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
+    align-items: center;
 }
-#business-plan__cards > div{
-    flex-grow: 1;
-    flex-basis: calc(100 / 3 - 10px);
+
+.card .content a {
+    margin-bottom:16px;
+    text-decoration: underline;
+    color: #0161FF;
 }
-#business-plan__cards > div:last-child{
-    flex-basis: 100%;
-}
-.business-plan__card{
-    border:  1 px solid lightslategray;
-}
-.business-plan__card--top{
-    text-align: center;
-    border:  1 px solid lightslategray;
+hr{
+   margin-topx: 3px; 
+   width: 40px;
    
 }
-.business-plan__card--top,
-.business-plan__card--bottom{
-    padding: 10px;
-    
-}
-.business-plan__card--bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.business-plan__card--bottom hr{
-    width: 30%;
-    border: 1 px solid lightslategray;
-}
-.business-plan__card--bottom  .fa-check{
-    color: var(--color-btn);
-}
-.business-plan__card--bottom ul{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-}
-.business-plan__card--bottom ul li{
-    text-indent: -0.7rem;
-    margin-left: 1.5rem;
-}
-.business-plan__card--bottom ul li i{
-    margin-right: 5px;
+.inline{
+    margin-bottom: 20px ;
 }
